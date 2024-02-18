@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>KindChoice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" id="site-css-css" href="https://crueltyfree.peta.org/wp-content/themes/cruelty-free-company-theme/assets/styles/style.css?ver=1708015770" type="text/css" media="all">
+</head>
+<body>
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border"></span>
+        </div>
+    </div>
+    <section class="section section-light">
+        <h2>ABOUT KINDCHOICE</h2>
+        <p>Welcome to KindChoice, your trusted platform for embracing cruelty-free living and ethical consumerism. At KindChoice, we are dedicated to empowering individuals to make compassionate and sustainable choices that positively impact animals, the environment, and our communities.</p>
+        <p>Our mission is to provide a comprehensive resource for discovering cruelty-free products, brands, and lifestyle options. We believe in promoting awareness, transparency, and accountability in the consumer market, driving positive change towards a more compassionate world.</p>
+        <p>Join us on our journey towards a kinder future, where every purchase becomes an opportunity to make a difference. Together, we can create a world where compassion and sustainability thrive.</p>
+    </section>
+    
+    <a href="https://crueltyfree.peta.org/wp-content/uploads/companies-dont-test.pdf">
+    <div class="pimg2">
+        <div class="ptext2">
+            <span class="border"></span>
+        </div>
+    </div> </a>
+    <section class="section section-light">
+        <h2>WHY CHOOSE KINDCHOICE?</h2>
+        <p>Comprehensive Directory: Access a vast database of cruelty-free products across various categories, making it easy to find alternatives that align with your values.</p>
+        <p>Transparency and Accountability: We prioritize transparency by providing detailed information about brands' cruelty-free status, certifications, and ethical practices.</p>
+        <p>Community Engagement: Connect with like-minded individuals, share experiences, and participate in discussions to foster a supportive and knowledgeable community.</p>
+        <p>Educational Resources: Gain insights into cruelty-free living, ethical consumerism, and sustainable practices through informative articles, guides, and resources.</p>
+        <p>Advocacy and Impact: By choosing cruelty-free options, you contribute to positive change, support ethical businesses, and advocate for the well-being of animals worldwide.</p>
+    </section>
+    
+
+    <div class="pimg4">
+        <div class="ptext">
+            <span class="border"></span>
+        </div>
+    </div>
+
+    <!-- Search Bar Section -->
+    <section class="section section-dark">
+        <h2>SEARCH PRODUCTS</h2>
+        <div class="search-container1">
+            
+                <div class="search-input-container">
+                    <input type="text" name="query" placeholder="Search for products..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <img src="pg4.png" alt="Search Icon" class="search-icon">
+                    </button>
+                </div>
+           
+        </div>
+        <div id="resultText"></div>
+        <p id="myRes"></p>
+        <script src="script.js"></script>
+  <script>
+   
+    const searchButton = document.querySelector('.search-button');
+
+if (searchButton) {
+  searchButton.addEventListener('click', (event) => {
+    const searchInput = document.querySelector('.search-input');
+    const text = searchInput.value;
+    console.log(text);
+    const result = searchElement(AnimalnotBased, text.toUpperCase());
+   
+    if(result)
+    {
+      console.log(result);// Log the search term on button click
+
+    }
+
+    // You can add your own logic here, like performing a search using text
+
+    // Prevent default form submission if needed (only with Method 2)
+    event.preventDefault();
+  });
+} else {
+  console.error('Search button not found');
+}
+
+    function searchElement(array, element) {
+      const index = array.indexOf(element);
+      if (index !== -1) {
+                
+        var myParagraph = document.getElementById("myRes");
+        myParagraph.style.color = "red"
+        myParagraph.innerText = "Great choice Good To Go! ";
+        return `${element} found at index ${index}`;
+
+      } else {
+        var myParagraph = document.getElementById("myRes");
+        myParagraph.style.color = "green"
+        myParagraph.innerText = "Choose a Kinder Choice ";
+        
+        return `${element} not found in the array`;
+      }
+    }
+
+    const result = searchElement(AnimalnotBased, elementToSearch);
+
+    // Update the HTML content based on the result
+
+  </script>
+    </section>
+    
+       
+    
+
+    <div class="pimg4">
+        <div class="ptext">
+            <span class="border"></span>
+        </div>
+    </div>
+
+
+    <!-- Continue with other sections... -->
+
+
+    <section class="section section-dark">
+        <h2>OUR MISSION</h2>
+        <p>At KindChoice, our mission is clear:</p>
+        <p>To promote compassion, sustainability, and ethical consumerism</p>
+        <p>To provide a platform for discovering and supporting cruelty-free products and brands</p>
+        <p>To raise awareness about animal welfare issues and the impact of consumer choices</p>
+        <p>To empower individuals to make informed decisions that align with their values</p>
+        <p>To advocate for a world where kindness, respect, and empathy are at the forefront of every purchase</p>
+        <p>Join us in our mission to create a more compassionate and sustainable future for all.</p>
+    </section>
+    
+
+    <div class="pimg5">
+        <div class="ptext">
+            <span class="border"></span>
+        </div>
+    </div>
+
+    <!-- Continue with other sections... -->
+
+   
+    </div>
+    <section class="section section-light">
+        <h2>GET INVOLVED</h2>
+        <p>Ready to embrace cruelty-free living and ethical consumerism? Here's how you can get involved with KindChoice:</p>
+        <p>Explore our website and discover a wide range of cruelty-free products and brands</p>
+        <p>Join our community to connect with like-minded individuals and share experiences</p>
+        <p>Stay informed by subscribing to our newsletter for updates, articles, and exclusive offers</p>
+        <p>Follow us on social media and participate in discussions to advocate for animal welfare and ethical practices</p>
+        <p>Support ethical businesses and make conscious choices that reflect your values</p>
+        <p>Together, we can make a difference and create a world where kindness and compassion prevail.</p>
+    </section>
+    
+    <!-- Continue with other sections... -->
+
+    <!-- <div class="pimg3">
+        <div class="ptext">
+            <span class="border">
+                <a href="https://support.peta.org/page/27010/donate/1?utm_source=PETA::Google&utm_medium=Ad&utm_campaign=0522::gen::PETA::Google::SEA-P::eg::searchad&gclid=Cj0KCQiAz8GuBhCxARIsAOpzk8wu8hUAE0t-a6OI-bxZjFn3OiQepiwXWYO-NgI0Won_h4ncVJWl_loaAoe7EALw_wcB">
+                    
+                </a>
+            </span>
+        </div>
+    </div> -->
+    <footer class="footer" role="contentinfo">
+        <div class="inner-footer grid-container">
+        <div class="grid-x">
+        <div class="small-12 cell">
+        <nav role="navigation">
+            <ul id="menu-footer-menu" class="menu footer-menu"><li id="menu-item-33" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"><a onclick="alert('Welcome, shoppers! By purchasing products from companies and brands that have banned all tests on animals,* you can help save rabbits, mice, guinea pigs, rats, and other animals from excruciating tests and a lifetime of suffering. But how do you know which companies and brands don’t test on animals and which ones are cruelty-free (animal test–free and vegan)? PETA’s Global Beauty Without Bunnies program is the ultimate resource for conscientious shoppers, making the quest for humane products as easy as (vegan) pie.'); return false;" href="#">What Is Beauty Without Bunnies?</a></li>        
+            <li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-34"> <a onclick="alert('As you read this, hundreds of mice, rats, cats, dogs, birds, rabbits, monkeys, and other animals are dying in cruel and unnecessary medical experiments and product tests. In fact, 219 animals are killed every minute in a U.S. lab. They die in pain, alone, without a gentle touch or a soothing voice. Animal studies teach us nothing about the health of humans because animals of different species absorb, metabolize, and eliminate substances differently from humans. The truth is that testing on animals is bad science: It is unreliable and unnecessary.You can keep the pressure on those responsible for these cruel tests by signing the pledge below and joining the thousands of caring consumers who refuse to purchase products from corporations that abuse animals.'); return false;" href="#">Pledge to Be Cruelty-Free</a></li>        
+            <li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-35"><a href="https://crueltyfree.peta.org/">Search for Cruelty-Free Companies</a></li>
+            <li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-36"><a href="https://crueltyfree.peta.org/">List of companies</a></li>
+        <li id="menu-item-38" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-38"><a target="_blank" rel="noopener" href="https://docs.google.com/document/d/1peg7-zRgQqYoyeJ0xjhKFc9TxkbwYcvk/edit?usp=sharing&ouid=108190545376371172308&rtpof=true&sd=true">Animal Ingredients List</a></li>
+        </ul> </nav>
+        </div>
+        <div id="branding_footer" class="dark bar"><div class="inner">
+        <div class="peta-branding-bar__footer">
+        <div class="peta-branding-bar__footer-grid">
+        <div class="peta-branding-bar__footer-menu">
+       
+        </div>
+        </div>
+        <div class="peta-branding-bar__footer-copyright">
+        <p>Project done by </p>
+        </div>
+        </div>
+        </div></div>
+        <div class="small-12 cell photo-credit">
+        Photo Credit: KARINE AIGNER / NPL / MINDEN PICTURES </div>
+        </div>
+        </div>
+        </footer>
+</body>
+</html>
+
+
+
+

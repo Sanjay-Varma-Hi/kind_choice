@@ -1,0 +1,132 @@
+body,html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: rgb(179, 213, 255);
+    
+}
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+    position:relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pimg1{
+    background-color: rgb(179, 213, 255);
+    background-image: url('pg1.png');
+    
+    background-position: center;
+    min-height:100%;
+    
+}
+.pimg2{
+    background-image: url('pg2.png');
+    background-size:  1500px 500px; /* Width 500px, height 300px */
+    min-height: 60%;
+}
+
+.pimg3{ 
+    background-image: url('pg3.png');
+    background-size:  1500px 500px; /* Width 500px, height 300px */
+    min-height: 62%;
+    background-position: bottom;
+    
+}
+
+.pimg4{ 
+    background-size:  1500px 500px; /* Width 500px, height 300px */
+    min-height: 1%;
+    background-position: bottom;
+}
+
+.pimg5{
+    background-image: url('pg5.jpg');
+    background-size:  1350px 400px; /* Width 500px, height 300px */
+    min-height: 60%;
+}
+
+.section{
+     background-color:rgb(179, 213, 255);
+    color: black;
+    text-align:center;
+    padding:50px 80px;
+}
+.section-light{
+    background-color:rgb(179, 213, 255);
+    color: black;
+}
+.section-dark{
+    background-color:rgb(179, 213, 255);
+    color: black;
+}
+.ptext{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size:27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+}
+.ptext2{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size:27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    
+}
+a{  
+    background-color:none;
+    color: rgb(179, 213, 255); 
+}
+
+
+/* Search Bar Styles */
+/* Search Bar Styles */
+.search-container1 {
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input-container {
+    position: relative;
+}
+
+.search-input {
+    padding: 10px 40px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 300px;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-icon {
+    width: 20px;
+    height: auto;
+}
